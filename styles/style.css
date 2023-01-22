@@ -1,0 +1,132 @@
+/*-----------variables---------- */
+:root {
+    --color-global: #00ffff;
+}
+/*------------general------------*/
+* {
+    letter-spacing: 2px;
+}
+body {
+    background: #000000;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--color-global);
+    border-radius: 30px;
+}
+.seccion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 30px 1px var(--color-global);
+    cursor: pointer;
+}
+/*scrool de habilidades y curriculum*/
+.campo {
+    overflow-y: scroll;
+    height: 290px;
+}
+.campo::-webkit-scrollbar {
+    width: 10px;
+}
+.campo::-webkit-scrollbar-thumb {
+    background: var(--color-global);
+    border-radius: 20px;
+}
+/*--------------login--------------*/
+.login-conteiner {
+    background: linear-gradient(to top, rgb(2, 3, 43), rgb(0, 0, 0));
+    background-size: cover;
+}
+.login:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 20px 25px rgb(4, 1, 50);
+}
+.login {
+    cursor: pointer;
+    background: linear-gradient(to top, rgba(17, 2, 105, 0.544), rgba(1, 0, 15, 0.881)), url("../public/login.jpg");
+    box-shadow: 0px 1px 20px var(--color-global);
+}
+/*----------modal----------*/
+.modal-content{
+    background: linear-gradient(to top, rgba(11, 2, 65, 0.923), rgba(43, 4, 60, 0.734)), url("../public/fondo.jpg");
+    box-shadow: 0px 1px 20px var(--color-global);
+}
+.modal-content:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0px 1px 30px darkblue;
+}
+/*----------scrool editor-modal----------*/
+.nombre {
+    overflow-y: scroll;
+    height: 450px;
+}
+.nombre::-webkit-scrollbar {
+    width: 10px;
+}
+.nombre::-webkit-scrollbar-thumb {
+    background: var(--color-global);
+    border-radius: 20px;
+}
+/*----------menu principal----------*/
+.option {
+    color: white;
+}
+.option:hover {
+    cursor: pointer;
+    color: var(--color-global);
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 10px 0px var(--color-global);
+
+}
+.option-login {
+    box-shadow: 0px 0px 10px 0px var(--color-global);
+}
+.option-logo-curso {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    color: var(--color-global);
+    font-size: 10px;
+    letter-spacing: 2px;
+
+}
+/*--------------SECCION--------------*/
+/*inicio*/
+.inicio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 5px 0px var(--color-global);
+    cursor: pointer;
+}
+#inicio {
+    background: linear-gradient(to top, rgb(0, 0, 4), rgba(0, 58, 110, 0.818)), url("../public/fondo.jpg");
+    background-size: cover;
+}
+/*sobre mi*/
+#sobre-mi {
+    background: linear-gradient(to top, rgb(3, 0, 82), rgba(61, 0, 57, 0.826)), url("../public/fondo.jpg");
+    background-size: cover;
+}
+/*habilidades*/
+#habilidades {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(1, 8, 86, 0.835)), url("../public/fondo.jpg");
+    background-size: cover;
+}
+/*curriculum*/
+#curriculum {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(1, 38, 63, 0.826)), url("../public/fondo.jpg");
+    background-size: cover
+}
+/*proyectos*/
+#proyectos {
+    background: linear-gradient(to top, rgb(67, 2, 47), rgba(2, 69, 73, 0.885)), url("../public/fondo.jpg");
+    background-size: cover;
+}
+/*contacto*/
+#contacto {
+    background: linear-gradient(to top, rgb(69, 4, 4), rgba(9, 1, 52, 0.876)), url("../public/fondo.jpg");
+    background-size: cover
+}
+/*---------------------------------------*/

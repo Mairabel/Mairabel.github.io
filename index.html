@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>Portfolio web</title>
+</head>
+
+<!--SECCION MENU-->
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-black fixed-top py-2">
+    <div class="container-fluid">
+      <div class="option-logo-curso nav-link w-25 px-1 fs-6 fw-bolder text-center text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-terminal-fill"viewBox="0 0 16 16">
+          <path
+            d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146z" />
+        </svg>
+        <p class="option-logo-curso my-1 px-2 text-start">Argentina_Programa #YoProgramo</p>
+      </div>
+      <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-1 my-1">
+            <a class="option nav-link rounded-2" href="#inicio">INICIO</a>
+          </li>
+          <li class="nav-item px-1 my-1">
+            <a class="option nav-link rounded-2" href="#sobre-mi">SOBRE MI</a>
+          </li>
+          <li class="nav-item px-1 my-1">
+            <a class="option nav-link rounded-2" href="#habilidades">HABILIDADES</a>
+          </li>
+          <li class="nav-item px-1 my-1">
+            <a class="option nav-link rounded-2" href="#curriculum">CURRICULUM</a>
+          </li>
+          <li class="nav-item px-1 my-1">
+            <a class="option nav-link rounded-2" href="#proyectos">PROYECTOS</a>
+          </li>
+          <li class="nav-item px-1 my-1">
+            <a class="option nav-link rounded-2" href="#contacto">CONTACTO</a>
+          </li>
+          <li class="px-2 my-1">
+            <a href="./pages/login.html" class="option-login nav-link text-white rounded-2 btn btn-outline-info">LOGIN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<article>
+  <!--SECCION INICIO-->
+  <section class="w-100 p-5 text-white text-center" id="inicio">
+    <div class="seccion mt-5 rounded-5 mx-auto ">
+      <img src="./public/logo.jpg"class="inicio card-img-top mx-auto mt-4 w-25 h-25 rounded-circle" alt="...">
+      <p class="fs-1 fw-bold mb-1">Melina Beltran</p>
+      <p class="fs-5 fw-light">Full Stack Developer Jr</p>
+      <div class="p-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"class="inicio mx-1 p-2 rounded-3 border-info border border-1 bi bi-instagram" viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"class="inicio mx-1 p-1 rounded-3 border-info border border-1 bi bi-linkedin" viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"class="inicio mx-1 p-1 rounded-3 border-info border border-1 bi bi-git" viewBox="0 0 16 16">
+          <path
+            d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"class="inicio mx-1 p-1 rounded-3 border-info border border-1 bi bi-twitter" viewBox="0 0 16 16">
+          <path
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!--SECCION SOBRE MI-->
+  <section class="w-100 p-5 text-white" id="sobre-mi">
+    <div class="seccion mt-5 rounded-5 mx-auto">
+      <p class="my-2 fs-1 fw-bolder pt-5 text-center">SOBRE MI</p>
+      <p class="fs-5 px-4">Hola,mi nombre es melina y soy Full Stack Developer Jr,aprendo rapido y siempre busco mantenerme actualizada con las nuevas tecnologias.</p>
+      <p class="mt-5 mx-4 px-2 fw-bolder fs-6">RESUMEN</p>
+      <ul class="px-5 pb-2">
+        <li class="mb-4">
+          <strong class="text-info">Nombre:</strong> Melina Beltran.
+        </li>
+        <li class="mb-4">
+          <strong class="text-info">Direccion:</strong> San Miguel de Tucuman, Argentina.
+        </li>
+        <li class="mb-4">
+          <strong class="text-info">Titulo:</strong> Full Stack Developer Jr.
+        </li>
+        <li class="mb-4">
+          <strong class="text-info">Email:</strong> melibel735@gmail.com.
+        </li>
+        <li class="mb-4">
+          <strong class="text-info">Telefono:</strong> 1234567890.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECCION HABILIDADES-->
+  <section class="w-100 p-5 text-white" id="habilidades">
+    <div class="seccion row m-5 rounded-5 mx-auto">
+      <p class=" m-4 fs-1 fw-bolder text-center">HABILIDADES</p>
+      <!--------habilidades tecnicas--------->
+      <div class="col mb-5">
+        <p class="mb-3 fs-2 text-center text-primary fw-boldtext fw-bold">Tecnicas</p>
+        <div class="campo items-campo p-2">
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Html</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">CSS</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Javascript</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-25 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">C++</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-25 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Java</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-50 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">MySql</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-50 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6">
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Visual Studio Code</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-50 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Paquete Office</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">git</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------habilidades blandas--------->
+      <div class="col mb-5">
+        <p class="mb-3 fs-2 text-center text-primary fw-bold">Blandas</p>
+        <div class="campo items-campo p-2">
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Empatia</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Solidas habilidades de comunicacion</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Compaginar tareas</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Gran capacidad de organizacion,planificar y coordinar</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Responsabilidad y compromiso</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Liderazgo</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Escucha activa</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6">
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Ingles</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m-3">
+            <p class="m-1 fst-italic fs-6">Paciencia</p>
+            <div class=" barra p-1">
+              <div class="bg-white rounded-5">
+                <div class="bg-info rounded-5 text-black w-75 text-end d-flex justify-content-end pb-1 px-4">
+                  <strong class="spinner-grow spinner-grow-sm bg-info fs-6"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-------------SECCION CURRICULUM--------------->
+<section class="w-100 p-5 text-white" id="curriculum">
+    <div class="seccion row mt-5 rounded-5 mx-auto">
+      <p class="fs-1 fw-bolder pt-5 text-center">CURRICULUM</p>
+      <!--------curriculum educacion--------->
+      <div class="col mb-5">
+        <p class="mb-3 fs-2 text-center text-info fw-semibold ">Educacion</p>
+        <div class="campo px-3">
+          <div class="row py-5 border-bottom border-info">
+            <div class="col-md-4">
+              <img src="./public/educacion3.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fs-6 pb-2 fw-bold">Licenciatura en programacion</p>
+                <p class="card-text m-1 ">Instituto: Universidad Nacional de Tucuman UTN</p>
+                <p class="card-text m-1 ">Fecha inicio: 01-03-2023</p>
+                <p class="card-text m-1 ">Fecha fin: 00-00-0000</p>
+                <p class="card-text m-1 ">Descripcion:Ingresante</p>
+              </div>
+            </div>
+          </div>
+          <div class="row py-5 border-bottom border-info">
+            <div class="col-md-4">
+              <img src="./public/educacion2.jpg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title pb-2 fs-6 fw-bold">Introduccion al Frontend</p>
+                <p class="card-text m-1 ">Instituto: Ada ITW</p>
+                <p class="card-text m-1 ">Fecha inicio: 03-03-2022</p>
+                <p class="card-text m-1 ">Fecha fin: 12-12-2022</p>
+                <p class="card-text m-1 ">Descripcion: Curso</p>
+              </div>
+            </div>
+          </div>
+          <div class="row py-5 border-bottom border-info">
+            <div class="col-md-4">
+              <img src="./public/educacion1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title pb-2 fs-6 fw-bold">Modalidad Polimodal De Bienes y Servicios</p>
+                <p class="card-text m-1 ">Instituto:Esc.Media de La Tuna</p>
+                <p class="card-text m-1 ">Fecha inicio: 03-03-2014</p>
+                <p class="card-text m-1 ">Fecha fin: 10-12-2019</p>
+                <p class="card-text m-1 ">Descripcion: Bachiller</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------cuurriculum experiencica laboral--------->
+      <div class="col mb-5">
+        <p class="mb-3 fs-2 text-center text-info fw-semibold ">Experiencica laboral</p>
+        <div class="campo px-3">
+          <div class="row py-5 border-bottom border-info">
+            <div class="col-md-4">
+              <img src="./public/experiencia1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fs-6 pb-2 fw-bold">Administracion</p>
+                <p class="card-text m-1 ">Empresa: De calzados</p>
+                <p class="card-text m-1 ">Fecha inicio: 03-03-2022</p>
+                <p class="card-text m-1 ">Fecha fin: 00-00-0000</p>
+                <p class="card-text m-1 ">Descripcion: Remoto</p>
+              </div>
+            </div>
+          </div>
+          <div class="row py-5 border-bottom border-info">
+            <div class="col-md-4">
+              <img src="./public/experiencia2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title pb-2 fs-6 fw-bold">Mantenimiento</p>
+                <p class="card-text m-1 ">Empresa:Dulce de Batata </p>
+                  <p class="card-text m-1 ">Fecha inicio: 03-03-2020</p>
+                <p class="card-text m-1 ">Fecha fin: 12-12-2021</p>
+                <p class="card-text m-1 ">Descripcion: Remoto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SECCION PROYECTOS -->
+  <section class="w-100 p-5 text-white text-center" id="proyectos">
+    <div class="seccion rounded-5 carousel slide m-5 mx-auto" data-bs-ride="false">
+      <p class="fs-1 fw-bolder">PROYECTOS</p>
+      <div id="carouselExampleCaptions" class="carousel slide py-3" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./public/proyecto2.jpg" class="d-block mx-auto w-50 opacity-75" alt="...">
+            <div class="carousel-caption d-none d-md-block fw-bold">
+              <h5>Uso de api de Rick & Morty</h5>
+              <p>Tecnologias usadas CSS3, HTML5 y JavaScript </p>
+              <a href="https://melina-beltran.github.io/"class="option-login nav-link text-white rounded-2 w-25 mx-auto m-4 btn btn-outline-info">Link</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./public/proyecto1.jpg" class="  d-block mx-auto w-50 opacity-75" alt="...">
+            <div class="carousel-caption d-none d-md-block fw-bold">
+              <h5>Venta de cerveza</h5>
+              <p>Tecnologias usadas React y MySql</p>
+              <a href="./pages/login.html"
+                class="option-login nav-link text-white rounded-2 w-25 mx-auto m-4 btn btn-outline-info">Link</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./public/proyecto3.jpg" class="  d-block mx-auto w-50 opacity-75" alt="...">
+            <div class="carousel-caption d-none d-md-block fw-bold">
+              <h5>Pagina del clima</h5>
+              <p>Tecnologias usadas HTML5, CSS3, JavaScript, Bootstrap y MySql</p>
+              <a href="./pages/login.html"
+                class="option-login nav-link text-white rounded-2 w-25 mx-auto m-4 btn btn-outline-info">Link</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!--SECCION CONTACTO-->
+<section class="w-100 p-5 text-white text-center" id="contacto">
+    <div class="seccion rounded-5 m-5 mx-auto">
+      <p class="fs-1 fw-bolder text-center pt-4">CONTACTO</p>
+      <div class="row m-3 mx-auto">
+        <div class="col pt-5">
+          <div class="mb-4">
+            <input class="form-control" placeholder="Nombre...">
+          </div>
+          <div class="mb-4">
+            <input class="form-control" placeholder="Numero Telefonico...">
+          </div>
+          <div class="mb-4">
+            <input class="form-control" placeholder="name@example.com">
+          </div>
+          <div class="mb-4">
+            <textarea class="form-control" rows="3" placeholder="Mensaje..."></textarea>
+          </div>
+          <a href="#" class="text-white border-white fw-bold btn btn-outline-info m-2"> Enviar mensaje
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"class="bi bi-send-check-fill" viewBox="0 0 16 16">
+              <path
+                d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 1.59 2.498C8 14 8 13 8 12.5a4.5 4.5 0 0 1 5.026-4.47L15.964.686Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+              <path
+                d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z" />
+            </svg>
+          </a>
+        </div>
+        <!--contactos-->
+        <div class="col text-start mt-4">
+          <div class="option w-75 px-5 my-3 mx-auto rounded-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"class=" rounded-2 bi bi-telephone-forward-fill text-info" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z" />
+            </svg>
+            Comunicate: 234-567891 
+          </div>
+          <div class="option w-75 px-5 my-3 mx-auto rounded-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"class="rounded-2 bi bi-envelope-open-fill text-info" viewBox="0 0 16 16">
+              <path
+                d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
+            </svg>
+            melibel735@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+
+<!--PIE DE PAGINA-->
+<footer class="card text-center bg-black opacity-75 text-white">
+  <div class="seccion rounded-5 mx-auto m-5">
+    <div class="pt-4 pb-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="mx-1  bi bi-instagram"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="mx-1  bi bi-linkedin"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="mx-1  bi bi-git"
+        viewBox="0 0 16 16">
+        <path
+          d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="mx-1  bi bi-twitter"
+        viewBox="0 0 16 16">
+        <path
+          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+      </svg>
+    </div>
+    <div class="py-2 pb-5">
+      <p class="card-footer text-muted fw-light fs-6">- Diseño y construccion con todos los derechos reservados
+        por el autor | Politica de privacidad -
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</html>
